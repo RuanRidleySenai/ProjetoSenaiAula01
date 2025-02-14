@@ -1,0 +1,93 @@
+/* Definição das variáveis de cor */
+:root {
+    --background-color: #573824;
+    --surface-color: #F0E8C2;
+    --text-color-primary: #291B1A;
+    --text-color-secondary: #573A37;
+    --text-color-bg-on: #F0E8C2;
+}
+
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    flex-direction: column;
+    font-family: 'Alice', serif;
+}
+
+/* Estilização do body */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url(https://s3-alpha-sig.figma.com/img/3ac0/e83b/0666d509cef826d10ee20c5980e28a6f?Expires=1740355200&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=Rbk0EJGpkA6nBfPEMM5U1PGc3eWaoOSVvzD3mb~j2zpIJNPHBpFYIwOskcKbxg40Vlkomk7GV0KomHyNDkEXzjZZ1DLajsl5N1Wv8~mJp4R9ya4g1ZPtq8-vWOAFojYDI8DdUqk-6b2VWXKepWzu2H4L1b3S8W1ZzGqOh1I~4mHez9p-LrP~wj8RVQeVYSaHV49iw96GyMugv2LHDNraI1TFwEu6KokzVkGr0AdDCu9suIf4rLxP51lNETSoo573s4GdWcIuOIwM22fBHeXJX1RvdmA2XqNRGzlNMh~hwZlPZ~VYGqbmyuN6Pdc8fGCf8Q1ZeCViOJuOGii30hxaIg__);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    backdrop-filter: blur(10px);
+}
+body::before{
+    content: ' ';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(100, 33,33, 0.404);
+    backdrop-filter: blur(10px);
+    z-index: -1;
+}
+
+/* Estilização do contêiner principal */
+.container {
+    background-color: var(--surface-color);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    filter: none; /* Remove o desfoque do conteúdo */
+    text-align:start;
+    color: var(--text-color-primary);
+    max-width: 800px;
+    margin: 20px;
+}
+
+/* Estilização da imagem principal */
+.imagem {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+/* Estilização dos títulos */
+h1, h2 {
+    color: var(--text-color-secondary);
+    margin-bottom: 10px;
+}
+
+/* Estilização dos parágrafos */
+p {
+    color: var(--text-color-primary);
+    margin-bottom: 10px;
+    text-align: justify;
+}
+
+/* Estilização das listas de ingredientes */
+.lista-ingredientes {
+    list-style-type: disc;
+    padding-left: 20px;
+    text-align: left;
+}
+
+/* Estilização do footer */
+footer {
+    font-size: 0.9em;    
+}
+.imagem-coracao {
+    width: 16px;
+    height: 16px;
+    vertical-align: middle;
+    margin: 0px 0.5px;
+}
